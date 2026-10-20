@@ -1,0 +1,19 @@
+name: My beloved Allaah
+
+on: 
+ push:
+   branches: main
+
+
+jobs:
+  build:
+   runs-on: ubuntu-latest
+
+   steps:
+     - uses: actions/checkout@v4
+     - name: In the Name of Allaah
+       run: |
+        echo "Bismillaah"
+        uname -a
+        w
+        pwd
